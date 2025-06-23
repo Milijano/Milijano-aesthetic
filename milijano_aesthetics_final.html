@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milijano Aesthetics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background: #fff8f0;
+        }
+        header h1 {
+            font-size: 2.8em;
+            color: #D4AF37;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #D4AF37;
+            color: white;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #D4AF37;
+            margin-bottom: 30px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .service-item {
+            width: 280px;
+            text-align: left;
+        }
+        .service-item h3 {
+            color: #D4AF37;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            font-size: 0.95em;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #D4AF37;
+            border-radius: 8px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #D4AF37;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #D4AF37;
+            color: white;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff8f0;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schönheit ist unsere Leidenschaft</h1>
+        <a href="#kontakt" class="button">Termin buchen</a>
+    </header>
+
+    <section class="section">
+        <h2>Leistungen</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>EMS Sculp</h3>
+                <p>Hochintensive elektromagnetische Impulse aktivieren die Muskulatur tiefenwirksam – für definierte Körperzonen und sichtbare Fettverbrennung.</p>
+            </div>
+            <div class="service-item">
+                <h3>Body Shaper Jawline</h3>
+                <p>Gezielte Straffung und Konturierung der Kieferlinie für ein markanteres und jugendliches Erscheinungsbild – ganz ohne chirurgischen Eingriff.</p>
+            </div>
+            <div class="service-item">
+                <h3>Microneedling</h3>
+                <p>Feine Nadeln stimulieren die Haut zur natürlichen Regeneration. Perfekt bei Falten, Aknenarben und für einen frischen Glow.</p>
+            </div>
+            <div class="service-item">
+                <h3>BB Glow</h3>
+                <p>Semi-permanente Foundation, die sanft in die Haut eingearbeitet wird – für einen makellosen, ebenmäßigen Teint ohne Make-up.</p>
+            </div>
+            <div class="service-item">
+                <h3>BB Lips</h3>
+                <p>Natürliche Pigmentierung für volle, gepflegte Lippen mit langanhaltendem Glanz und frischer Farbe – ganz ohne Lippenstift.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x250?text=Body+Shaping" alt="Body Shaping">
+            <img src="https://via.placeholder.com/200x250?text=Gesicht+BB+Glow" alt="BB Glow">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Über uns</h2>
+        <p>Deine Schönheit verdient höchste Präzision und Ästhetik. Bei Milijano Aesthetics setzen wir auf moderne Technologie und ganzheitliche Beratung für natürliche Ergebnisse.</p>
+    </section>
+
+    <section class="section" id="kontakt">
+        <h2>Kontaktformular</h2>
+        <form action="mailto:deine@email.de" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Milijano Aesthetics. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
